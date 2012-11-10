@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[
+def fields_view_get(self, cr, uid, view_id=None, view_type='form', context=None, toolbar=False):
+	res = super(${1:ModelName}, self).fields_view_get(cr, uid, view_id, view_type, context, toolbar)
+	return res
+]]></content>
+    <tabTrigger>def fields_view_get</tabTrigger>
+    <scope>source.python</scope>
+    <description>def fields_view_get</description>
+</snippet>

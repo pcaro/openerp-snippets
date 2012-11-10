@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:ref}': fields.reference('${2:Document}', 
+	selection=[
+	#TODO : define list of model and Label that will be work as a reference
+	('account.account', 'Account'),
+	$0 	], size=${3:128}),
+]]></content>
+    <tabTrigger>fields.reference</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.reference</description>
+</snippet>

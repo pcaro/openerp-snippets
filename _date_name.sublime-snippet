@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+_date_name = '${1:data}' $0
+]]></content>
+    <tabTrigger>_date_name</tabTrigger>
+    <scope>source.python</scope>
+    <description>_date_name</description>
+</snippet>

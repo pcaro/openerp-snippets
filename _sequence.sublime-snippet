@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+_sequence = ${1:data} $0
+]]></content>
+    <tabTrigger>_sequence</tabTrigger>
+    <scope>source.python</scope>
+    <description>_sequence</description>
+</snippet>

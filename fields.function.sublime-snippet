@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:data}': fields.function(${2:_function_call}, method=True, type='${3:float}' string='${4:Label}', store=${5:True}), $0
+]]></content>
+    <tabTrigger>fields.function</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.function</description>
+</snippet>

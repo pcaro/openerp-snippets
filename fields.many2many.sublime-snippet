@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:data}_ids':fields.one2many('${2:OpenerpModel}', '${3:partner}_${4:category}_rel', ${5:model1}_id', ${6:model2}_id', ${7:Label}'), $0
+]]></content>
+    <tabTrigger>fields.many2many</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.many2many</description>
+</snippet>

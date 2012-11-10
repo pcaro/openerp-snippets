@@ -1,0 +1,12 @@
+
+<snippet>
+    <content><![CDATA[
+def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):
+	#TODO : process on args before search
+	res = super(${1:ModelName}, self).search(cr, uid, args, offset, limit, order, context, count)
+	#TODO : process
+]]></content>
+    <tabTrigger>def search</tabTrigger>
+    <scope>source.python</scope>
+    <description>def search</description>
+</snippet>

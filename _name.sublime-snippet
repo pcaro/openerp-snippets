@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+_name = '${1:openerp}' $0
+]]></content>
+    <tabTrigger>_name</tabTrigger>
+    <scope>source.python</scope>
+    <description>_name</description>
+</snippet>

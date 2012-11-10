@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:field}_id': fields.related('${2:relation_field}','${1:field}_id', type='${3:many2one}', relation='${4:openerpmodel}', string=${5:Label}'), $0
+]]></content>
+    <tabTrigger>fields.related</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.related</description>
+</snippet>

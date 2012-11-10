@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[
+'property_${1:name}': fields.property( 
+	'${2:OpenerpModel}',
+	type='${3:many2one}',
+	relation='${4:openerpmodel}',
+	string='${5:Label}',
+	method=True,
+	view_load=True,
+	domain='[('${6:state}','=','${7:done}')]',
+	help="${8:Helpdescrip}"
+	required=${10:True}),
+]]></content>
+    <tabTrigger>fields.property</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.property</description>
+</snippet>

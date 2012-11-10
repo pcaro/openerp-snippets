@@ -1,0 +1,12 @@
+
+<snippet>
+    <content><![CDATA[
+def ${1:_check_metho}(self, cr, uid, ids): 
+#TODO : check condition and return boolean accordingly
+	return True
+_constraints = [(${1:_check_metho}, 'Error: Invalid Message', ['${2:field_name}']), ] $0
+]]></content>
+    <tabTrigger>_constraints</tabTrigger>
+    <scope>source.python</scope>
+    <description>_constraints</description>
+</snippet>

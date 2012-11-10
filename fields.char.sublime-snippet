@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:name}':fields.char('${2:Label}', size=${3:64}, required=${4:False}, readonly=${4:False}), $0
+]]></content>
+    <tabTrigger>fields.char</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.char</description>
+</snippet>

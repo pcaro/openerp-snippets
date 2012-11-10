@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[
+def ${1:method}_${2:name}(self, cr, uid, ids):
+	result = None
+	#TODO : OpenERP Business Process 
+	$0
+	return result
+]]></content>
+    <tabTrigger>New OpenERP Method</tabTrigger>
+    <scope>source.python</scope>
+    <description>New OpenERP Method</description>
+</snippet>

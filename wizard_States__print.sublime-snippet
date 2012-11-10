@@ -1,0 +1,12 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:report}':{
+	'actions': [],
+	'result': {'type':'print', 'report':'${2:modelreportname}', 'state':'${3:end}'}
+	}, $0
+]]></content>
+    <tabTrigger>wizard States : print</tabTrigger>
+    <scope>source.python</scope>
+    <description>wizard States : print</description>
+</snippet>

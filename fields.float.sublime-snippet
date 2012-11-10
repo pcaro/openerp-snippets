@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:number}': fields.float('${2:Label}', digits=(${3:16}, int(config['price_accuracy'])), $0
+]]></content>
+    <tabTrigger>fields.float</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.float</description>
+</snippet>

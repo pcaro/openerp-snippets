@@ -1,0 +1,12 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:state}':fields.selection([
+	('draft','Draft'),
+	('done','Done'),
+	$0 ],	'${2:State}', select=True, readonly=${3:True}),
+]]></content>
+    <tabTrigger>fields.selection : [(draft, Draft)]</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.selection : [(draft, Draft)]</description>
+</snippet>

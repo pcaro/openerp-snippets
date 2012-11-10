@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[
+_inherit = '${1:openerpmodel}' 
+#Do not touch _name it must be same as _inherit
+#_name = '${1:openerpmodel}' $0
+]]></content>
+    <tabTrigger>_inherit</tabTrigger>
+    <scope>source.python</scope>
+    <description>_inherit</description>
+</snippet>
