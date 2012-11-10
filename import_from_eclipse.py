@@ -9,7 +9,8 @@ SNIPPET_TEMPLATE = """
 %(content)s
 ]]></content>
     <tabTrigger>%(name)s</tabTrigger>
-    <scope>source.python</scope>
+    <scope>%(scope)s</scope>
+    <description>%(description)s</description>
 </snippet>"""
 
 
@@ -36,19 +37,26 @@ def main():
     replace_re = re.compile(r'\$\{(?P<var>\w*)\}')
     for t in document.getElementsByTagName('template'):
         name = t.getAttribute('name')
+        context = t.getAttribute('context')
+        description = t.getAttribute('description')
+        scope = 'text'
+        if 'python' in context:
+            scope = 'source.python'
+        if 'xml' in context:
+            scope = 'text.xml'
         data = t.childNodes[0].data
         content = data.replace('${cr}', '$0')
         o = Replacer()
-        content2 = replace_re.sub(o.replace, content)
-        snippet = SNIPPET_TEMPLATE % dict(content=content2, name=name)
+        content = replace_re.sub(o.replace, content)
+        snippet = SNIPPET_TEMPLATE % dict(content=content, name=name, scope=scope,
+                                          description=description)
         fname = name + '.sublime-snippet'
         if os.path.exists(fname):
-            print '%s ya existe'
+            print '%s exists' % fname
         else:
             with open(fname, "w") as f:
                 f.write(snippet)
-                print '*' * 10
-                print snippet
+                print "%s generated" % name
 
 if __name__ == '__main__':
     main()
