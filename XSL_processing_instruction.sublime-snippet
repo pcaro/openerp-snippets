@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+<?xml-stylesheet type="text/xsl" href="${1:cursor}"?>
+]]></content>
+    <tabTrigger>XSL processing instruction</tabTrigger>
+    <scope>text.xml</scope>
+    <description>XSL processing instruction</description>
+</snippet>

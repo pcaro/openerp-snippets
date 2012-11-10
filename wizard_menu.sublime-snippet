@@ -1,0 +1,13 @@
+
+<snippet>
+    <content><![CDATA[
+<menuitem 
+		action="${1:wizard_id}" 
+		id="${2:unique_menu_id}" 
+		parent="${3:parent_menu_id}" 
+		type="wizard"/>
+]]></content>
+    <tabTrigger>wizard_menu</tabTrigger>
+    <scope>text.xml</scope>
+    <description>wizard_menu</description>
+</snippet>

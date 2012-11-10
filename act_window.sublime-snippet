@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[
+        
+        <act_window name="${1:string}"
+			domain="[('${2:field}', '${3:condition}', active_id)]"
+			res_model="${4:res_model}"
+			src_model="${5:src_model}"
+			id="act_${6:unique_id}"/>
+	
+]]></content>
+    <tabTrigger>act_window</tabTrigger>
+    <scope>text.xml</scope>
+    <description>act_window</description>
+</snippet>

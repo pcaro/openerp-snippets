@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+<!-- ${1:cursor} -->
+]]></content>
+    <tabTrigger>comment</tabTrigger>
+    <scope>text.xml</scope>
+    <description>xml comment</description>
+</snippet>

@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[
+            <record model="ir.actions.act_window" id="action_${1:object_name}_tree_view">
+                <field name="name">${2:objectname}</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">${2:objectname}</field>
+		   <!-- <field name="domain">[('field_name','condition',criteria)]</field>-->
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+                <field name="view_id" ref="${1:object_name}_tree_view"/>
+            </record>
+
+]]></content>
+    <tabTrigger>view_action</tabTrigger>
+    <scope>text.xml</scope>
+    <description>view_action</description>
+</snippet>

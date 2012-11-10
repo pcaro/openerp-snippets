@@ -1,0 +1,44 @@
+
+<snippet>
+    <content><![CDATA[
+
+            
+            <record model="ir.ui.view" id="${1:object_name}_tree_view">
+                <field name="name">${2:objectname}.tree</field>
+                <field name="model">${2:objectname}</field>
+                <field name="type">tree</field>
+                <field name="arch" type="xml">
+                    <tree string="${3:tree_string}">
+                        <field name="name"/>
+                    </tree>
+                </field>
+            </record>
+
+            <record model="ir.ui.view" id="${1:object_name}_form_view">
+                <field name="name">${2:objectname}.form</field>
+                <field name="model">${2:objectname}</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="${4:form_string}">
+                        <field name="name" select="1"/>
+                    </form>
+                </field>
+            </record>
+
+            <record model="ir.actions.act_window" id="action_${1:object_name}_tree_view">
+                <field name="name">${2:objectname}</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">${2:objectname}</field>
+		   <!-- <field name="domain">[('field_name','condition',criteria)]</field>-->
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+                <field name="view_id" ref="${1:object_name}_tree_view"/>
+            </record>
+
+			<menuitem id="${1:object_name}_menu" name="${2:objectname}" parent="${5:cursor}" action="action_${1:object_name}_tree_view"/>
+
+]]></content>
+    <tabTrigger>complete_view</tabTrigger>
+    <scope>text.xml</scope>
+    <description>complete_view</description>
+</snippet>
