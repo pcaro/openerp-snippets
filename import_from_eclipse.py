@@ -1,3 +1,4 @@
+import string
 import sys
 import re
 import os
@@ -12,6 +13,15 @@ SNIPPET_TEMPLATE = """
     <scope>%(scope)s</scope>
     <description>%(description)s</description>
 </snippet>"""
+
+
+def slugify(value):
+    """
+    Normalizes string, for use as file name.
+    """
+    value = re.sub('[-\s]+', '_', value)
+    valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+    return ''.join(c for c in value if c in valid_chars)
 
 
 class Replacer(object):
@@ -50,13 +60,13 @@ def main():
         content = replace_re.sub(o.replace, content)
         snippet = SNIPPET_TEMPLATE % dict(content=content, name=name, scope=scope,
                                           description=description)
-        fname = name + '.sublime-snippet'
+        fname = slugify(name) + '.sublime-snippet'
         if os.path.exists(fname):
             print '%s exists' % fname
         else:
             with open(fname, "w") as f:
                 f.write(snippet)
-                print "%s generated" % name
+                print "%s generated" % fname
 
 if __name__ == '__main__':
     main()

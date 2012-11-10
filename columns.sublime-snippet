@@ -1,9 +1,0 @@
-<snippet>
-    <content><![CDATA[
-_columns = {
-    $1
-}
-]]></content>
-    <tabTrigger>_columns</tabTrigger>
-    <scope>source.python</scope>
-</snippet>
