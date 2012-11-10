@@ -26,5 +26,12 @@ Without Package Control
 
 If you haven't got Package Control installed (seriously, go install it!) you will need to make a clone of this repository into your packages folder.
 
+Then, create a package-metadata.json file::
+
+    {"url": "https://bitbucket.org/pcaro/openerp-snippets",
+    "version": "0.1",
+    "description": "Code snippets for developing with OpenErp"}
+
+
 
 
