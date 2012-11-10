@@ -5,6 +5,11 @@ OpenErp Snippets
 
 This is a `sublime <http://www.sublimetext.com/>`_ package which includes a bunch of handy snippets for doing OpenERp development.
 
+Snippets borrowed from `open-erp-eclipse-template <http://code.google.com/p/openerp-eclipse-template/>`_.
+
+Licence: GPL3
+
+
 ===========
 Instalation
 ===========
