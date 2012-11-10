@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+help='${1:HelpAboutField}', $0
+]]></content>
+    <tabTrigger>Field Attribute : help</tabTrigger>
+    <scope>source.python</scope>
+    <description>Field Attribute : help</description>
+</snippet>

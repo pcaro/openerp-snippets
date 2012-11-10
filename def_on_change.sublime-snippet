@@ -1,0 +1,12 @@
+
+<snippet>
+    <content><![CDATA[
+def onchange_${1:fields}(self, cr, uid, ${1:fields}, context=None):
+	#TODO : compute new values from the db/system
+	$0
+	return {   'field_1': res1   'field_2': res }
+]]></content>
+    <tabTrigger>def on_change</tabTrigger>
+    <scope>source.python</scope>
+    <description>def on_change</description>
+</snippet>

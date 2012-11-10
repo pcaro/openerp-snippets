@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:check}': {
+	'actions': [],
+	'result': {'type':'choice','next_state':self.${2:_check_condition}}
+	#TODO : define def ${2:_check_condition}(self, cr, uid, data, context):
+	},
+$0
+]]></content>
+    <tabTrigger>wizard state : end</tabTrigger>
+    <scope>source.python</scope>
+    <description>wizard state : end</description>
+</snippet>

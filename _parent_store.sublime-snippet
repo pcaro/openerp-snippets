@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+_parent_store = ${1:False} $0
+]]></content>
+    <tabTrigger>_parent_store</tabTrigger>
+    <scope>source.python</scope>
+    <description>_parent_store</description>
+</snippet>

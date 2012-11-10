@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+${1:name} = Char(${1:name}${2:data})
+]]></content>
+    <tabTrigger>test</tabTrigger>
+    <scope>source.python</scope>
+    <description>test</description>
+</snippet>

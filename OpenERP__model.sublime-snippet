@@ -1,0 +1,23 @@
+
+<snippet>
+    <content><![CDATA[
+from osv import osv
+from osv import fields
+
+class ${1:ClassName}(osv.osv):
+ '''
+ Open ERP Model
+ '''
+	_name = '${2:openerpmodel}'
+	_description = '${2:openerpmodel}'
+ 
+	_columns = {
+			'${3:name}':fields.char('${4:data}', size={64}, required={False}, readonly={False}),
+			$0
+		}
+${1:ClassName}()
+]]></content>
+    <tabTrigger>OpenERP : model</tabTrigger>
+    <scope>source.python</scope>
+    <description>OpenERP : model</description>
+</snippet>

@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[
+def fields_get(self, cr, uid, fields=None, context=None):
+	return super(${1:ModelName}, self).fields_get(cr, uid, fields, context, read_access) 
+	$0
+]]></content>
+    <tabTrigger>def fields_get</tabTrigger>
+    <scope>source.python</scope>
+    <description>def fields_get</description>
+</snippet>

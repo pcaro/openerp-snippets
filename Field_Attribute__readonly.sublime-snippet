@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+readonly=True, $0
+]]></content>
+    <tabTrigger>Field Attribute : readonly</tabTrigger>
+    <scope>source.python</scope>
+    <description>Field Attribute : readonly</description>
+</snippet>

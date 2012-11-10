@@ -1,0 +1,12 @@
+
+<snippet>
+    <content><![CDATA[
+store={
+	#TODO : define model and function call for store field 
+	'${1:field_name}': (_get_invoice_from_line, None, 50),
+	}
+]]></content>
+    <tabTrigger>Field Attribute : store</tabTrigger>
+    <scope>source.python</scope>
+    <description>Field Attribute : store</description>
+</snippet>

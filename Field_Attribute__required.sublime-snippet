@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+required=True, $0
+]]></content>
+    <tabTrigger>Field Attribute : required</tabTrigger>
+    <scope>source.python</scope>
+    <description>Field Attribute : required</description>
+</snippet>

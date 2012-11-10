@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:state}': fields.selection(${2:_get_states}, '${3:data}', required=${4:True}), $0
+]]></content>
+    <tabTrigger>fields.selection [def _select_data]</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.selection [def _select_data]</description>
+</snippet>

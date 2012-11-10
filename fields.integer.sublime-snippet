@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+'${1:number}': fields.integer('${2:Label}') $0
+]]></content>
+    <tabTrigger>fields.integer</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.integer</description>
+</snippet>

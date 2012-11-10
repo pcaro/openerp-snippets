@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[
+def action_cancel(self, cr, uid, ids, *args): 
+#TODO : Business Process 	return result $0
+	result = True
+]]></content>
+    <tabTrigger>def action_workflow</tabTrigger>
+    <scope>source.python</scope>
+    <description>def action_workflow</description>
+</snippet>

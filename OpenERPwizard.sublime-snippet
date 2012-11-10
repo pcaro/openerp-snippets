@@ -1,0 +1,45 @@
+
+<snippet>
+    <content><![CDATA[
+import wizard
+import pooler
+
+class ${1:SendEmail}(wizard.interface):
+	 '''
+	 OpenERP Wizard
+	 '''
+	 ${2:form} = '''
+			<?xml version="1.0"?>
+			<form string="Process Form">
+			<field name="${3:field}"/>
+			</form>  '''
+
+	 ${4:fields} = {
+			'${3:field}': {'string': '${5:Label}', 'type': 'many2one', 'relation': 'res.company'},
+		}
+
+	 def ${6:_get_defaults}(self, cr, uid, data, context):
+		#TODO : initlize required data
+		$0
+		return data['form'] 
+
+	 def ${7:_do_duplicate}(self, cr, uid, data, context):
+		pool = pooler.get_pool(cr.dbname)
+		return {}
+		
+	 states = {
+		'init': {
+			'actions': [${6:_get_defaults}],
+			'result': {'type': 'form', 'arch': ${2:form}, 'fields': ${4:fields}, 'state': (('end', 'Cancel'), ('${8:process}', 'Process'))},
+		},
+		'${8:process}': {
+			'actions': [${7:_do_duplicate}],
+			'result': {'type': 'state', 'state': 'end'},
+		},
+	}
+${1:SendEmail}('${9:modelprocess}')
+]]></content>
+    <tabTrigger>OpenERPwizard</tabTrigger>
+    <scope>source.python</scope>
+    <description>OpenERP wizard</description>
+</snippet>

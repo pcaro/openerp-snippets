@@ -1,0 +1,25 @@
+
+<snippet>
+    <content><![CDATA[
+{
+    "name": "${1:name}",
+    "version": "1.0",
+    "depends": ["base"],
+    "author": "${2:author}",
+    "category": "${3:category}",
+    "description": """
+    This module provide :
+    $0
+    """,
+    "init_xml": [],
+    'update_xml': [],
+    'demo_xml': [],
+    'installable': True,
+    'active': False,
+#    'certificate': '${4:certificate}',
+}
+]]></content>
+    <tabTrigger>__terp__</tabTrigger>
+    <scope>source.python</scope>
+    <description>__terp__</description>
+</snippet>

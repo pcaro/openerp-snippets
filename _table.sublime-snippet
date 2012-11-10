@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+_table = '${1:openerp_model}' $0
+]]></content>
+    <tabTrigger>_table</tabTrigger>
+    <scope>source.python</scope>
+    <description>_table</description>
+</snippet>

@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[
+def copy(self, cr, uid, id, default=None, context=None): 
+	res_id = super(${1:ModelName}, self).copy(cr, uid, id, default, context)
+	return res_id $0
+]]></content>
+    <tabTrigger>def copy</tabTrigger>
+    <scope>source.python</scope>
+    <description>def copy</description>
+</snippet>

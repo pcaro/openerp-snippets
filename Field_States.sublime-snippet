@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+states={'${1:draft}':[('readonly',${2:False})$0]}
+]]></content>
+    <tabTrigger>Field States</tabTrigger>
+    <scope>source.python</scope>
+    <description>Field States</description>
+</snippet>

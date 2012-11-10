@@ -1,0 +1,10 @@
+
+<snippet>
+    <content><![CDATA[
+#TODO : import time required to get currect datetime
+'${1:datetime}': fields.datetime('${2:Date}'), $0
+]]></content>
+    <tabTrigger>fields.datetime</tabTrigger>
+    <scope>source.python</scope>
+    <description>fields.datetime</description>
+</snippet>
