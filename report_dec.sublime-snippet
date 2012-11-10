@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[
+		<report
+            id="${1:id}"
+            model="${2:objetname}"        
+            name="${3:name}"
+            rml="${4:path_to_rml}"
+            string="${5:string}" ${6:cursor}
+    <!--    auto="False" -->
+	<!--    menu="False" -->
+	<!--    keyword="client_print_multi" -->
+            />
+]]></content>
+    <tabTrigger>report_dec</tabTrigger>
+    <scope>text.xml</scope>
+    <description>report_dec</description>
+</snippet>

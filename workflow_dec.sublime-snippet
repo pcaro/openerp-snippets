@@ -1,0 +1,16 @@
+
+<snippet>
+    <content><![CDATA[
+		<record id="act_${1:statename}" model="workflow.activity">
+            <field name="wkf_id" ref="wkf"/>
+            <!--<field name="flow_start">True</field>-->
+            <!--<field name="flow_stop">True</field>-->
+            <field name="name">${1:statename}</field>
+            <field name="action">${2:function}</field>
+            <field name="kind">function</field>
+        </record>
+]]></content>
+    <tabTrigger>workflow_dec</tabTrigger>
+    <scope>text.xml</scope>
+    <description>workflow_dec</description>
+</snippet>

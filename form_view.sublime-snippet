@@ -1,0 +1,18 @@
+
+<snippet>
+    <content><![CDATA[
+           <record model="ir.ui.view" id="${1:object_name}_form_view">
+                <field name="name">${2:objectname}.form</field>
+                <field name="model">${2:objectname}</field>
+                <field name="type">form</field>
+                <field name="arch" type="xml">
+                    <form string="${3:form_string}">
+                        <field name="name" select="1"/>
+                    </form>
+                </field>
+            </record>
+]]></content>
+    <tabTrigger>form_view</tabTrigger>
+    <scope>text.xml</scope>
+    <description>form_view</description>
+</snippet>

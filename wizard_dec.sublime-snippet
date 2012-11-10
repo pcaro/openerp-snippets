@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[
+		<wizard
+			string="${1:string}"
+			model="${2:objectname}"
+			name="${3:wizard_name}"
+			id="${4:wizrd_id}"
+			<!--keyword="client_print_multi" -->
+			/>  
+]]></content>
+    <tabTrigger>wizard_dec</tabTrigger>
+    <scope>text.xml</scope>
+    <description>wizard_dec</description>
+</snippet>

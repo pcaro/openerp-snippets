@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+<menuitem id="${1:object_name}_menu" name="${1:object_name}" />
+]]></content>
+    <tabTrigger>menu_item_parent</tabTrigger>
+    <scope>text.xml</scope>
+    <description>menu_item_parent</description>
+</snippet>

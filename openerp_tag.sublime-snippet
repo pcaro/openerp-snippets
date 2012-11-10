@@ -1,0 +1,14 @@
+
+<snippet>
+    <content><![CDATA[
+<openerp>
+    <data>
+    
+    
+    </data>
+</openerp>
+]]></content>
+    <tabTrigger>openerp_tag</tabTrigger>
+    <scope>text.xml</scope>
+    <description>opener_tag</description>
+</snippet>

@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+<button name='%(${1:wizard_id})d' type='action' string='${2:string}' states='${3:state}' icon="${4:icon}"/>
+]]></content>
+    <tabTrigger>button_wizard</tabTrigger>
+    <scope>text.xml</scope>
+    <description>button_wizard</description>
+</snippet>

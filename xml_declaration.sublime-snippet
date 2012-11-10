@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[
+<?xml version="1.0" encoding="${1:encoding}"?>
+]]></content>
+    <tabTrigger>xml declaration</tabTrigger>
+    <scope>text.xml</scope>
+    <description>xml declaration</description>
+</snippet>

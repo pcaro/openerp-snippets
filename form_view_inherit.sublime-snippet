@@ -1,0 +1,20 @@
+
+<snippet>
+    <content><![CDATA[
+		 <record model="ir.ui.view" id="${1:object_name}_form_view">
+                <field name="name">${2:objectname}.form</field>
+                <field name="model">${2:objectname}</field>
+                <field name="type">form</field>
+                <field name="inherit_id" ref="${3:view_name}"/>
+                <field name="arch" type="xml">
+                    <form string="${4:form_string}">
+                        <field name="${5:field_name}" position="${6:position}"/>
+                        	<field name="${7:new_field}"/>
+                    </form>
+                </field>
+            </record>
+]]></content>
+    <tabTrigger>form_view_inherit</tabTrigger>
+    <scope>text.xml</scope>
+    <description>form_view_inherit</description>
+</snippet>
